@@ -1,0 +1,211 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border-top: 5px black solid;
+}
+
+.navbar .navbar-items, .navbar .navbar-items  button, .navbar .name, .container-1  {
+    background-color: #205375;
+}
+.navbar .navbar-items  button, .navbar .name, article .article-item1, .container-3 .assignment .read-more, .container-3 .assignment a {
+    font-weight: bold;
+}
+
+.navbar .navbar-items {
+    padding: 1.5rem 0 0 12.5rem;
+}
+
+.navbar .navbar-items  button {
+    margin: 0 1rem;
+    font-size: 1.2rem;
+    padding: 0.2rem 0.5rem;
+    background-color: #ffff;
+    color: #205375;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.navbar .navbar-items  button a {
+    text-decoration: none;
+}
+.navbar .name {
+    padding: 1.5rem 0 0 1.2rem;
+    font-size: 2.5rem;
+    color:#ffff;
+}
+
+.container-1 {
+    display: grid;
+    justify-content: center;
+    border-bottom: 5px black solid;
+    padding-top: 3rem;
+}
+
+.container-1 .emphasis-orange {
+    color: rgb(255, 115, 0);
+}
+.container-1 .emphasis-underline {
+    text-decoration: underline;
+    text-decoration-color:rgb(255, 115, 0)
+}
+article .article-item1 {
+    font-size: 5rem;
+    text-align: left;
+    justify-self: center;
+    line-height: 6.5rem;
+    color: #ffff;
+}
+
+article .article-item2 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+    line-height: 2.5rem;
+    justify-self: center;
+    margin-bottom: 6rem;
+    color: #ffff
+}
+
+/* "ABOUT ME" SECTION */
+
+.container-2 {
+    display: flex;
+    justify-content: center;
+    border-bottom: 5px black solid;
+    margin-top: 1.5rem;
+}
+
+.anchor {
+    position: relative;
+}
+
+.anchor #about-me {
+    position: absolute;
+    left: 0;
+    top: -120px;
+}
+
+@media (max-width:600px) {
+    .container-2 article {
+        display: flex;    
+        place-items: center;
+        flex-direction: column;
+        padding: 0 4rem;
+}
+    .container-2 p {
+        padding: 0 6rem;
+    }
+}
+ h1 {                         
+    display: flex;
+    justify-content: center;
+    font-size: 2.5rem;
+    padding:1.5rem 0;
+}
+ h2 {
+    margin: 2rem 0 1rem 1rem;
+}
+
+.container-2 p {
+    font-size: 1.2rem;
+    justify-content: center;
+    width: 55ch;
+}
+
+.container-2 .list-left, .list-right {
+    display: inline-block;
+    margin: 0 0 4rem 2rem;
+    font-size: 1.2rem;
+    line-height: 2rem;
+}
+
+.container-2 .list-left {
+    margin-right: 5rem;
+}
+
+ /* "PORTFOLIO" SECTION */
+
+.container-3 {
+    display: grid;
+    display: flex;                                
+    justify-content: center;
+    gap: 1rem;
+    grid-template-rows: 2rem 1fr 2rem 2rem;
+    border-bottom: 5px black solid;
+    padding: 0 5rem;
+    background-color: #ffeadd;
+}
+
+.container-3 .assignment {
+    border: 0.4rem #F66B0E solid;
+    margin: 1rem 3rem 2rem 3rem;
+    text-align: center;
+    padding: 0.5rem 1rem 2rem 1rem;
+    border-radius: 3%;
+    background-color: #fff;
+}
+.portfolio {
+    background-color: #ffeadd;
+    padding-top: 1rem;
+}
+
+.anchor #portfolio {
+    position: absolute;
+    left: 0;
+    top: -120px;
+}
+
+@media (max-width: 1200px) {
+    .container-3 {
+        flex-wrap: wrap;
+    }
+    .container-3 .assignment p {
+        min-width: 20rem;
+    }
+}
+
+.container-3 .assignment h3, p, a {
+    margin: 1.2rem;
+    text-align: left;
+}
+
+.container-3 .assignment h3 {
+    font-size: x-large;
+}
+
+.container-3 .assignment .read-more {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    padding: 0.3rem 3rem;
+    font-size: medium;
+    color:#ffff;
+    background-color:#F66B0E;
+    border-radius: 0.3rem;
+    border: none;
+}
+
+.container-3 .assignment a {
+    font-size: smaller;
+    color:#F66B0E;
+}
+
+#bottom-container {
+    border:none;
+}
+footer {
+    padding: 0.1rem; 
+    background-color: #000000;
+    color: #fff;
+    margin-top: 4rem;
+}
